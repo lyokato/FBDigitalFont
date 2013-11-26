@@ -20,7 +20,7 @@ This library includes some kind of digital styled font drawer. They're not TTF f
 
 ### SUPPORTING CHARACTER
 
-- Digit (0-1)
+- Digit (0-9)
 - Upper Case Alphabet (A-Z)
 - Dash (-)
 
