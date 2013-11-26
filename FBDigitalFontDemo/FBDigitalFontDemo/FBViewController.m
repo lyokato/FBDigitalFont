@@ -94,7 +94,7 @@
     v.glowColor = UIColorFromRGB(0x00ffff);
     v.innerGlowColor = UIColorFromRGB(0x00ffff);
     v.lineColor = UIColorFromRGB(0xffffff); // 0xffdd66
-    v.innerGlowSize = 2.0;
+    v.innerGlowSize = 1.0;
     v.verticalEdgeLength = 8;
     v.horizontalEdgeLength = 10;
     [self.view addSubview:v];
