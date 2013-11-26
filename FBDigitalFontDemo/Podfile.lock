@@ -1,0 +1,14 @@
+PODS:
+  - FBDigitalFont (0.0.1)
+
+DEPENDENCIES:
+  - FBDigitalFont (from `..`)
+
+EXTERNAL SOURCES:
+  FBDigitalFont:
+    :path: ..
+
+SPEC CHECKSUMS:
+  FBDigitalFont: 7b68d1b70fa5dd6ecac8243cf71227b346562c17
+
+COCOAPODS: 0.27.1
