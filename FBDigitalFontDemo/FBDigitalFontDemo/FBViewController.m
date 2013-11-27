@@ -62,17 +62,17 @@
     CGRect frame = CGRectMake(40, 150, 300, 50);
     FBLCDFontView *v = [[FBLCDFontView alloc] initWithFrame:frame];
     v.text = @"20141231";
-    v.lineWidth = 3.0;
+    v.lineWidth = 4.0;
     v.drawOffLine = YES;
-    v.edgeLength = 14;
-    v.margin = 8.0;
+    v.edgeLength = 20;
+    v.margin = 10.0;
     v.backgroundColor = [UIColor blackColor];
     v.horizontalPadding = 20;
     v.verticalPadding = 14;
     v.glowSize = 10.0;
     v.glowColor = UIColorFromRGB(0x00ffff);
     v.innerGlowColor = UIColorFromRGB(0x00ffff);
-    v.innerGlowSize = 2.0;
+    v.innerGlowSize = 3.0;
     [self.view addSubview:v];
     [v resetSize];
     [v centerizeInWidth:320];
@@ -80,10 +80,10 @@
 
 - (void)setupSquareFont
 {
-    CGRect frame = CGRectMake(10, 230, 300, 50);
+    CGRect frame = CGRectMake(10, 240, 300, 50);
     FBSquareFontView *v = [[FBSquareFontView alloc] initWithFrame:frame];
     v.text = @"SQUARE";
-    v.lineWidth = 2.0;
+    v.lineWidth = 3.0;
     v.lineCap = kCGLineCapRound;
     v.lineJoin = kCGLineJoinRound;
     v.margin = 12.0;
@@ -94,9 +94,9 @@
     v.glowColor = UIColorFromRGB(0x00ffff);
     v.innerGlowColor = UIColorFromRGB(0x00ffff);
     v.lineColor = UIColorFromRGB(0xffffff); // 0xffdd66
-    v.innerGlowSize = 1.0;
-    v.verticalEdgeLength = 8;
-    v.horizontalEdgeLength = 10;
+    v.innerGlowSize = 2.0;
+    v.verticalEdgeLength = 12;
+    v.horizontalEdgeLength = 14;
     [self.view addSubview:v];
     [v resetSize];
     [v centerizeInWidth:320];
@@ -104,11 +104,11 @@
 
 - (void)setupSquareFont2
 {
-    CGRect frame = CGRectMake(10, 300, 300, 50);
+    CGRect frame = CGRectMake(10, 320, 300, 50);
     FBSquareFontView *v = [[FBSquareFontView alloc] initWithFrame:frame];
     v.text = @"0123456789";
-    v.lineWidth = 2.0;
-    v.margin = 10.0;
+    v.lineWidth = 3.0;
+    v.margin = 12.0;
     v.lineCap = kCGLineCapSquare;
     v.lineJoin = kCGLineJoinMiter;
     v.backgroundColor = [UIColor blackColor];
@@ -117,9 +117,9 @@
     v.glowSize = 10.0;
     v.glowColor = UIColorFromRGB(0x00ffff);
     v.innerGlowColor = UIColorFromRGB(0x00ffff);
-    v.innerGlowSize = 1.0;
-    v.horizontalEdgeLength = 5.0;
-    v.verticalEdgeLength = 10.0;
+    v.innerGlowSize = 2.0;
+    v.horizontalEdgeLength = 6.0;
+    v.verticalEdgeLength = 12.0;
     [self.view addSubview:v];
     [v resetSize];
     [v centerizeInWidth:320];
