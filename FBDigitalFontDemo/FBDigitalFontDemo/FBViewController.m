@@ -45,6 +45,7 @@
     CGRect frame = CGRectMake(10, 60, 300, 50);
     FBBitmapFontView *v = [[FBBitmapFontView alloc] initWithFrame:frame];
     v.text = @"BITMAP";
+    v.dotType = FBFontDotTypeSquare;
     v.numberOfBottomPaddingDot = 1;
     v.numberOfTopPaddingDot    = 1;
     v.numberOfLeftPaddingDot   = 2;
@@ -63,7 +64,7 @@
     FBLCDFontView *v = [[FBLCDFontView alloc] initWithFrame:frame];
     v.text = @"20141231";
     v.lineWidth = 4.0;
-    v.drawOffLine = YES;
+    v.drawOffLine = NO;
     v.edgeLength = 20;
     v.margin = 10.0;
     v.backgroundColor = [UIColor blackColor];

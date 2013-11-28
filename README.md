@@ -109,6 +109,8 @@ Don't forget about this.
 - innerGlowSize
 - text
 
+![BitmapFontDescription](http://static.squarespace.com/static/51c2c539e4b032aad7050f2e/t/52975587e4b05482b01991b7/1385649545573/bitmap_desc.png?format=1500w "BitmapFontDescription")
+
 ### FBLCDFontView
 
 ```
@@ -148,6 +150,8 @@ Don't forget about this.
 - glowColor
 - innerGlowColor
 - text
+
+![LCDFontDescription](http://static.squarespace.com/static/51c2c539e4b032aad7050f2e/t/529755a0e4b0a6ba0e3444c0/1385649570268/lcd_desc.png?format=1500w "LCDFontDescription")
 
 ### FBSquareFontView
 
