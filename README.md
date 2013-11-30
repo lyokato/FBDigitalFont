@@ -18,12 +18,6 @@ This library includes some kind of digital styled font drawer. They're not TTF f
 
 ![SquareFont](http://static.squarespace.com/static/51c2c539e4b032aad7050f2e/t/5294a0bfe4b02cc5320e5d8e/1385472192323/FBFontSquare.png?format=1500w "SquareFont")
 
-### SUPPORTING CHARACTER
-
-- Digit (0-9)
-- Upper Case Alphabet (A-Z)
-- Dash (-)
-
 ## GLOWING EFFECT
 
 I guess this kind of fonts have high affinity to glowing effects.
@@ -197,6 +191,13 @@ Don't forget about this.
 - glowColor
 - innerGlowColor
 - text
+
+## SEE ALSO
+
+If you don't need digital font but glowing effect,
+See [FBGlowLabel](http://github.com/lyokato/fbglowlabel "FBGlowLabel")
+
+![FBGlowLabelImage](http://static.squarespace.com/static/51c2c539e4b032aad7050f2e/t/52821ce0e4b03c032e6c1113/1384258840734/glow.png?format=750w "FBGlowLabelImage")
 
 ## FOR MORE DETAIL
 
