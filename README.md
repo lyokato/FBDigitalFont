@@ -10,13 +10,19 @@ This library includes some kind of digital styled font drawer. They're not TTF f
 
 ![BitmapFont](http://static.squarespace.com/static/51c2c539e4b032aad7050f2e/t/5294a08ee4b080890ab2d599/1385472143725/FBFontBitmap.png?format=1500w "BitmapFont")
 
+supporting A-Z, 0-9
+
 ### LCD Font
 
 ![LCDFont](http://static.squarespace.com/static/51c2c539e4b032aad7050f2e/t/5294a0aae4b0f601b40f61a0/1385472171287/FBFontLCD.png?format=1500w "LCDFont")
 
+supporting 0-9, dash
+
 ### Square Font
 
 ![SquareFont](http://static.squarespace.com/static/51c2c539e4b032aad7050f2e/t/5294a0bfe4b02cc5320e5d8e/1385472192323/FBFontSquare.png?format=1500w "SquareFont")
+
+supporting A-Z, 0-9, dash
 
 ## GLOWING EFFECT
 
