@@ -52,7 +52,7 @@
         if ([[coord objectAtIndex:i] boolValue]) {
             y = startPoint.y + floor(i / 5) * l;
             x = startPoint.x + fmod(i, 5) * l;
-            r = CGRectMake(x, y, edgeLength, edgeLength); 
+            r = CGRectMake(x, y, edgeLength, edgeLength);
             if (dotType == FBFontDotTypeSquare) {
                 CGContextFillRect(ctx, r);
             } else {
@@ -68,117 +68,117 @@
   switch (symbol) {
     case FBFontSymbol0:
       return @[
-         @false,  @true,  @true,  @true, @false, 
-          @true, @false, @false, @false,  @true, 
-          @true, @false, @false, @false,  @true, 
-          @true, @false, @false, @false,  @true, 
-          @true, @false, @false, @false,  @true, 
-          @true, @false, @false, @false,  @true, 
+         @false,  @true,  @true,  @true, @false,
+          @true, @false, @false, @false,  @true,
+          @true, @false, @false, @false,  @true,
+          @true, @false, @false, @false,  @true,
+          @true, @false, @false, @false,  @true,
+          @true, @false, @false, @false,  @true,
          @false,  @true,  @true,  @true, @false
       ];
     case FBFontSymbol1:
       return @[
-         @false, @false,  @true, @false, @false, 
+         @false, @false,  @true, @false, @false,
          @false,  @true,  @true, @false, @false,
-         @false, @false,  @true, @false, @false, 
-         @false, @false,  @true, @false, @false, 
-         @false, @false,  @true, @false, @false, 
-         @false, @false,  @true, @false, @false, 
+         @false, @false,  @true, @false, @false,
+         @false, @false,  @true, @false, @false,
+         @false, @false,  @true, @false, @false,
+         @false, @false,  @true, @false, @false,
          @false, @false,  @true, @false, @false
       ];
     case FBFontSymbol2:
       return @[
-         @false,  @true,  @true,  @true, @false, 
-          @true, @false, @false, @false,  @true, 
-         @false, @false, @false, @false,  @true, 
-         @false, @false, @false,  @true, @false, 
-         @false, @false,  @true, @false, @false, 
-         @false,  @true, @false, @false, @false, 
-          @true,  @true,  @true,  @true,  @true 
+         @false,  @true,  @true,  @true, @false,
+          @true, @false, @false, @false,  @true,
+         @false, @false, @false, @false,  @true,
+         @false, @false, @false,  @true, @false,
+         @false, @false,  @true, @false, @false,
+         @false,  @true, @false, @false, @false,
+          @true,  @true,  @true,  @true,  @true
       ];
     case FBFontSymbol3:
       return @[
-         @false,  @true,  @true,  @true, @false, 
-          @true, @false, @false, @false,  @true, 
-         @false, @false, @false, @false,  @true, 
-         @false, @false,  @true,  @true, @false, 
-         @false, @false, @false, @false,  @true, 
-          @true, @false, @false, @false,  @true, 
+         @false,  @true,  @true,  @true, @false,
+          @true, @false, @false, @false,  @true,
+         @false, @false, @false, @false,  @true,
+         @false, @false,  @true,  @true, @false,
+         @false, @false, @false, @false,  @true,
+          @true, @false, @false, @false,  @true,
          @false,  @true,  @true,  @true, @false
       ];
     case FBFontSymbol4:
       return @[
-         @false, @false, @false,  @true, @false, 
-         @false, @false,  @true,  @true, @false, 
-         @false,  @true, @false,  @true, @false, 
-          @true, @false, @false,  @true, @false, 
-          @true,  @true,  @true,  @true,  @true, 
-         @false, @false, @false,  @true, @false, 
+         @false, @false, @false,  @true, @false,
+         @false, @false,  @true,  @true, @false,
+         @false,  @true, @false,  @true, @false,
+          @true, @false, @false,  @true, @false,
+          @true,  @true,  @true,  @true,  @true,
+         @false, @false, @false,  @true, @false,
          @false, @false, @false,  @true, @false
       ];
     case FBFontSymbol5:
       return @[
-          @true,  @true,  @true,  @true,  @true, 
-          @true, @false, @false, @false, @false, 
-          @true,  @true,  @true,  @true, @false, 
-         @false, @false, @false, @false,  @true, 
-         @false, @false, @false, @false,  @true, 
-          @true, @false, @false, @false,  @true, 
+          @true,  @true,  @true,  @true,  @true,
+          @true, @false, @false, @false, @false,
+          @true,  @true,  @true,  @true, @false,
+         @false, @false, @false, @false,  @true,
+         @false, @false, @false, @false,  @true,
+          @true, @false, @false, @false,  @true,
          @false,  @true,  @true,  @true, @false
       ];
     case FBFontSymbol6:
       return @[
-         @false,  @true,  @true,  @true, @false, 
-          @true, @false, @false, @false, @false, 
-          @true, @false, @false, @false, @false, 
-          @true,  @true,  @true,  @true, @false, 
-          @true, @false, @false, @false,  @true, 
-          @true, @false, @false, @false,  @true, 
+         @false,  @true,  @true,  @true, @false,
+          @true, @false, @false, @false, @false,
+          @true, @false, @false, @false, @false,
+          @true,  @true,  @true,  @true, @false,
+          @true, @false, @false, @false,  @true,
+          @true, @false, @false, @false,  @true,
          @false,  @true,  @true,  @true, @false
       ];
     case FBFontSymbol7:
       return @[
-          @true,  @true,  @true,  @true,  @true, 
-         @false, @false, @false, @false,  @true, 
-         @false, @false, @false,  @true, @false, 
-         @false, @false,  @true, @false, @false, 
-         @false,  @true, @false, @false, @false, 
-         @false,  @true, @false, @false, @false, 
+          @true,  @true,  @true,  @true,  @true,
+         @false, @false, @false, @false,  @true,
+         @false, @false, @false,  @true, @false,
+         @false, @false,  @true, @false, @false,
+         @false,  @true, @false, @false, @false,
+         @false,  @true, @false, @false, @false,
          @false,  @true, @false, @false, @false
       ];
     case FBFontSymbol8:
       return @[
-         @false,  @true,  @true,  @true, @false, 
-          @true, @false, @false, @false,  @true, 
-          @true, @false, @false, @false,  @true, 
-         @false,  @true,  @true,  @true, @false, 
-          @true, @false, @false, @false,  @true, 
-          @true, @false, @false, @false,  @true, 
+         @false,  @true,  @true,  @true, @false,
+          @true, @false, @false, @false,  @true,
+          @true, @false, @false, @false,  @true,
+         @false,  @true,  @true,  @true, @false,
+          @true, @false, @false, @false,  @true,
+          @true, @false, @false, @false,  @true,
          @false,  @true,  @true,  @true, @false
       ];
     case FBFontSymbol9:
       return @[
-         @false,  @true,  @true,  @true, @false, 
-          @true, @false, @false, @false,  @true, 
-          @true, @false, @false, @false,  @true, 
-         @false,  @true,  @true,  @true,  @true, 
-         @false, @false, @false, @false,  @true, 
-         @false, @false, @false, @false,  @true, 
+         @false,  @true,  @true,  @true, @false,
+          @true, @false, @false, @false,  @true,
+          @true, @false, @false, @false,  @true,
+         @false,  @true,  @true,  @true,  @true,
+         @false, @false, @false, @false,  @true,
+         @false, @false, @false, @false,  @true,
          @false,  @true,  @true,  @true, @false
       ];
     case FBFontSymbolA:
       return @[
-         @false,  @true,  @true,  @true, @false, 
+         @false,  @true,  @true,  @true, @false,
           @true, @false, @false, @false,  @true,
           @true, @false, @false, @false,  @true,
           @true,  @true,  @true,  @true,  @true,
           @true, @false, @false, @false,  @true,
           @true, @false, @false, @false,  @true,
-          @true, @false, @false, @false,  @true 
+          @true, @false, @false, @false,  @true
       ];
     case FBFontSymbolB:
       return @[
-         @true,  @true,  @true,  @true, @false, 
+         @true,  @true,  @true,  @true, @false,
          @true, @false, @false, @false,  @true,
          @true, @false, @false, @false,  @true,
          @true,  @true,  @true,  @true, @false,
@@ -188,17 +188,17 @@
       ];
     case FBFontSymbolC:
       return @[
-         @false,  @true,  @true,  @true,  @true, 
+         @false,  @true,  @true,  @true,  @true,
           @true, @false, @false, @false, @false,
           @true, @false, @false, @false, @false,
           @true, @false, @false, @false, @false,
           @true, @false, @false, @false, @false,
           @true, @false, @false, @false, @false,
-         @false,  @true,  @true,  @true, @true 
+         @false,  @true,  @true,  @true, @true
       ];
     case FBFontSymbolD:
       return @[
-          @true,  @true,  @true,  @true, @false, 
+          @true,  @true,  @true,  @true, @false,
           @true, @false, @false, @false, @true,
           @true, @false, @false, @false, @true,
           @true, @false, @false, @false, @true,
@@ -208,7 +208,7 @@
       ];
     case FBFontSymbolE:
       return @[
-          @true,  @true,  @true,  @true,  @true, 
+          @true,  @true,  @true,  @true,  @true,
           @true, @false, @false, @false, @false,
           @true, @false, @false, @false, @false,
           @true,  @true,  @true,  @true, @false,
@@ -218,7 +218,7 @@
       ];
     case FBFontSymbolF:
       return @[
-         @true,  @true,  @true,  @true,  @true, 
+         @true,  @true,  @true,  @true,  @true,
          @true,  @false, @false, @false, @false,
          @true,  @false, @false, @false, @false,
          @true,  @true,  @true,  @true,  @false,
@@ -228,7 +228,7 @@
       ];
     case FBFontSymbolG:
       return @[
-         @false,  @true,  @true,  @true, @true, 
+         @false,  @true,  @true,  @true, @true,
          @true,  @false, @false, @false, @false,
          @true,  @false, @false, @false, @false,
          @true,  @false, @true,  @true,  @true,
@@ -238,17 +238,17 @@
       ];
     case FBFontSymbolH:
       return @[
-         @true,  @false, @false, @false, @true, 
-         @true,  @false, @false, @false, @true, 
-         @true,  @false, @false, @false, @true, 
-         @true,  @true,  @true,  @true,  @true, 
-         @true,  @false, @false, @false, @true, 
-         @true,  @false, @false, @false, @true, 
+         @true,  @false, @false, @false, @true,
+         @true,  @false, @false, @false, @true,
+         @true,  @false, @false, @false, @true,
+         @true,  @true,  @true,  @true,  @true,
+         @true,  @false, @false, @false, @true,
+         @true,  @false, @false, @false, @true,
          @true,  @false, @false, @false, @true
       ];
     case FBFontSymbolI:
       return @[
-         @true,  @true,  @true,  @true,  @true, 
+         @true,  @true,  @true,  @true,  @true,
          @false, @false, @true,  @false, @false,
          @false, @false, @true,  @false, @false,
          @false, @false, @true,  @false, @false,
@@ -278,37 +278,37 @@
       ];
     case FBFontSymbolL:
       return @[
-         @true,  @false, @false, @false, @false, 
-         @true,  @false, @false, @false, @false, 
-         @true,  @false, @false, @false, @false, 
-         @true,  @false, @false, @false, @false, 
-         @true,  @false, @false, @false, @false, 
-         @true,  @false, @false, @false, @false, 
+         @true,  @false, @false, @false, @false,
+         @true,  @false, @false, @false, @false,
+         @true,  @false, @false, @false, @false,
+         @true,  @false, @false, @false, @false,
+         @true,  @false, @false, @false, @false,
+         @true,  @false, @false, @false, @false,
          @true,  @true,  @true,  @true,  @true
       ];
     case FBFontSymbolM:
       return @[
-         @true,  @false, @false, @false, @true, 
-         @true,  @true,  @false, @true,  @true, 
-         @true,  @false, @true,  @false, @true, 
-         @true,  @false, @true,  @false, @true, 
-         @true,  @false, @false, @false, @true, 
-         @true,  @false, @false, @false, @true, 
+         @true,  @false, @false, @false, @true,
+         @true,  @true,  @false, @true,  @true,
+         @true,  @false, @true,  @false, @true,
+         @true,  @false, @true,  @false, @true,
+         @true,  @false, @false, @false, @true,
+         @true,  @false, @false, @false, @true,
          @true,  @false, @false, @false, @true
       ];
     case FBFontSymbolN:
       return @[
-         @true,  @false, @false, @false, @true, 
-         @true,  @false, @false, @false, @true, 
-         @true,  @true,  @false, @false, @true, 
-         @true,  @false, @true,  @false, @true, 
-         @true,  @false, @false, @true,  @true, 
-         @true,  @false, @false, @false, @true, 
+         @true,  @false, @false, @false, @true,
+         @true,  @false, @false, @false, @true,
+         @true,  @true,  @false, @false, @true,
+         @true,  @false, @true,  @false, @true,
+         @true,  @false, @false, @true,  @true,
+         @true,  @false, @false, @false, @true,
          @true,  @false, @false, @false, @true
       ];
     case FBFontSymbolO:
       return @[
-         @false,  @true,  @true,  @true, @false, 
+         @false,  @true,  @true,  @true, @false,
          @true,  @false, @false, @false, @true,
          @true,  @false, @false, @false, @true,
          @true,  @false, @false, @false, @true,
@@ -318,17 +318,17 @@
       ];
     case FBFontSymbolP:
       return @[
-         @true,  @true,  @true,  @true,  @false, 
+         @true,  @true,  @true,  @true,  @false,
          @true,  @false, @false, @false, @true,
          @true,  @false, @false, @false, @true,
-         @true,  @true,  @true,  @true,  @false, 
+         @true,  @true,  @true,  @true,  @false,
          @true,  @false, @false, @false, @false,
          @true,  @false, @false, @false, @false,
          @true,  @false, @false, @false, @false
       ];
     case FBFontSymbolQ:
       return @[
-         @false,  @true,  @true, @true,  @false, 
+         @false,  @true,  @true, @true,  @false,
          @true,  @false, @false, @false, @true,
          @true,  @false, @false, @false, @true,
          @true,  @false, @false, @false, @true,
@@ -338,27 +338,27 @@
       ];
     case FBFontSymbolR:
       return @[
-         @true,  @true,  @true,  @true,  @false, 
+         @true,  @true,  @true,  @true,  @false,
          @true,  @false, @false, @false, @true,
          @true,  @false, @false, @false, @true,
-         @true,  @true,  @true,  @true,  @false, 
+         @true,  @true,  @true,  @true,  @false,
          @true,  @false, @true,  @false, @false,
          @true,  @false, @false, @true,  @false,
          @true,  @false, @false, @false, @true
       ];
     case FBFontSymbolS:
       return @[
-         @false, @true,  @true,  @true,  @false, 
+         @false, @true,  @true,  @true,  @false,
          @true,  @false, @false, @false, @true,
          @true,  @false, @false, @false, @false,
-         @false, @true,  @true,  @true,  @false, 
+         @false, @true,  @true,  @true,  @false,
          @false, @false, @false, @false, @true,
          @true,  @false, @false, @false, @true,
          @false,  @true,  @true,  @true,  @false
       ];
     case FBFontSymbolT:
       return @[
-         @true,  @true,  @true,  @true, @true, 
+         @true,  @true,  @true,  @true, @true,
          @false, @false, @true,  @false, @false,
          @false, @false, @true,  @false, @false,
          @false, @false, @true,  @false, @false,
@@ -428,8 +428,8 @@
       ];
     case FBFontSymbolArrowUp:
       return @[
-         @false, @false, @false, @false, @false, 
-         @false, @false, @true,  @false, @false, 
+         @false, @false, @false, @false, @false,
+         @false, @false, @true,  @false, @false,
          @false, @true,  @true,  @true,  @false,
          @true,  @false, @true,  @false, @true,
          @false, @false, @true,  @false, @false,
@@ -438,7 +438,7 @@
       ];
     case FBFontSymbolArrowDown:
       return @[
-         @false, @false, @false, @false, @false, 
+         @false, @false, @false, @false, @false,
          @false, @false, @true,  @false, @false,
          @false, @false, @true,  @false, @false,
          @true,  @false, @true,  @false, @true,
@@ -448,7 +448,7 @@
       ];
     case FBFontSymbolArrowLeft:
       return @[
-         @false, @false, @false, @false, @false, 
+         @false, @false, @false, @false, @false,
          @false, @false, @true,  @false, @false,
          @false, @true,  @false, @false, @false,
          @true,  @true,  @true,  @true,  @true,
@@ -458,7 +458,7 @@
       ];
     case FBFontSymbolArrowRight:
       return @[
-         @false, @false, @false, @false, @false, 
+         @false, @false, @false, @false, @false,
          @false, @false, @true,  @false, @false,
          @false, @false, @false, @true,  @false,
          @true,  @true,  @true,  @true,  @true,
@@ -471,7 +471,7 @@
          @false, @false, @false, @false, @false,
          @false, @false, @false, @false, @false,
          @false, @false, @false, @false, @false,
-         @true,  @true,  @true,  @true,  @true, 
+         @true,  @true,  @true,  @true,  @true,
          @false, @false, @false, @false, @false,
          @false, @false, @false, @false, @false,
          @false, @false, @false, @false, @false
@@ -485,6 +485,16 @@
          @false, @false, @false, @false, @false,
          @false, @false, @false, @false, @false,
          @false, @false, @false, @false, @false
+      ];
+    case FBFontSymbolExplanationMark:
+      return @[
+         @false,  @false, @true, @false, @false,
+         @false,  @false, @true, @false, @false,
+         @false,  @false, @true, @false, @false,
+         @false,  @false, @true, @false, @false,
+         @false,  @false, @true, @false, @false,
+         @false,  @false, @false,@false, @false,
+         @false,  @false, @true, @false, @false
       ];
   }
 }
