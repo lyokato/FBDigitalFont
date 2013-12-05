@@ -486,7 +486,7 @@
          @false, @false, @false, @false, @false,
          @false, @false, @false, @false, @false
       ];
-    case FBFontSymbolExplanationMark:
+    case FBFontSymbolExclamationMark:
       return @[
          @false,  @false, @true, @false, @false,
          @false,  @false, @true, @false, @false,

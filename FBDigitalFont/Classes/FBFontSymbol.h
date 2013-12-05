@@ -43,7 +43,7 @@ typedef enum {
   FBFontSymbolArrowRight,
   FBFontSymbolDash,
   FBFontSymbolSpace,
-  FBFontSymbolExplanationMark
+  FBFontSymbolExclamationMark
 } FBFontSymbolType;
 
 @interface FBFontSymbol : NSObject
