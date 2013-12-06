@@ -39,7 +39,7 @@
     self.numberOfTopPaddingDot    = 0;
     self.numberOfRightPaddingDot  = 1;
     self.numberOfBottomPaddingDot = 0;
-    self.numberOfPaddingDotWithinDigits = 1;
+    self.numberOfPaddingDotsBetweenDigits = 1;
 }
 
 - (void)setText:(NSString *)text
@@ -66,7 +66,13 @@
 
 - (NSInteger)numberOfHorizontalDot
 {
-    return (5 * [self.symbols count]) + (self.numberOfPaddingDotWithinDigits * ([self.symbols count] - 1)) + self.numberOfLeftPaddingDot + self.numberOfRightPaddingDot;
+    NSInteger totalDotsFromSymbols = 0;
+    for (NSNumber *number in self.symbols) {
+        FBFontSymbolType symbol = [number integerValue];
+        totalDotsFromSymbols += [FBBitmapFont numberOfDotsWideForSymbol:symbol];
+    }
+    
+    return totalDotsFromSymbols + (self.numberOfPaddingDotsBetweenDigits * ([self.symbols count] - 1)) + self.numberOfLeftPaddingDot + self.numberOfRightPaddingDot;
 }
 
 - (NSInteger)numberOfVerticalDot
@@ -78,24 +84,26 @@
 {
     NSInteger i = 0;
     
-    CGFloat l = (self.edgeLength + self.margin) * (5 + self.numberOfPaddingDotWithinDigits);
-    CGFloat x = (self.numberOfLeftPaddingDot == 0) ? 0 : self.numberOfLeftPaddingDot * (self.edgeLength + self.margin);
-    CGFloat y = (self.numberOfTopPaddingDot == 0) ? 0 : self.numberOfTopPaddingDot * (self.edgeLength + self.margin);
+//    CGFloat l = (self.edgeLength + self.margin) * (5 + self.numberOfPaddingDotsBetweenDigits);
+    CGFloat x = self.numberOfLeftPaddingDot * (self.edgeLength + self.margin);
+    CGFloat y = self.numberOfTopPaddingDot * (self.edgeLength + self.margin);
     
     CGRect r = (CGRect){CGPointZero, [self sizeOfContents]};
     UIGraphicsBeginImageContextWithOptions(r.size, NO, 0.0);
     CGContextRef imgCtx = UIGraphicsGetCurrentContext();
-
     
     for (i = 0; i < [self.symbols count]; i++) {
+        
         [FBBitmapFont drawSymbol:[[self.symbols objectAtIndex:i] intValue]
                      withDotType:self.dotType
                            color:self.onColor
                       edgeLength:self.edgeLength
                           margin:self.margin
-                      startPoint:CGPointMake(x + i * l, y)
+                      startPoint:CGPointMake(x, y)
                        inContext:imgCtx];
         
+        CGFloat numberWide = [FBBitmapFont numberOfDotsWideForSymbol:[[self.symbols objectAtIndex:i] intValue]];
+        x += (self.edgeLength + self.margin) * (numberWide + self.numberOfPaddingDotsBetweenDigits);
     }
     UIImage *digitImage = UIGraphicsGetImageFromCurrentImageContext();
     CGContextClearRect(imgCtx, r);

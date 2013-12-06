@@ -84,6 +84,8 @@
             [symbols addObject:[NSNumber numberWithInt:FBFontSymbolSpace]];
         } else if ([c isEqualToString:@"!"]) {
             [symbols addObject:[NSNumber numberWithInt:FBFontSymbolExclamationMark]];
+        } else if ([c isEqualToString:@":"]) {
+            [symbols addObject:[NSNumber numberWithInt:FBFontSymbolColon]];
         } else {
             [symbols addObject:[NSNumber numberWithInt:FBFontSymbolSpace]];
         }

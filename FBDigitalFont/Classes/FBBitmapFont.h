@@ -22,4 +22,7 @@ typedef enum {
             margin:(CGFloat)margin
         startPoint:(CGPoint)startPoint
          inContext:(CGContextRef)ctx;
+
++ (NSInteger)numberOfDotsWideForSymbol:(FBFontSymbolType)symbol;
+
 @end
