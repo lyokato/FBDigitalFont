@@ -38,7 +38,6 @@
          inContext:(CGContextRef)ctx
 {
 
-    NSInteger i = 0;
     float x = 0;
     float y = 0;
     float l = edgeLength + margin;
