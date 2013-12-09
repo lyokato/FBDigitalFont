@@ -44,7 +44,7 @@
 {
     CGRect frame = CGRectMake(10, 60, 300, 50);
     FBBitmapFontView *v = [[FBBitmapFontView alloc] initWithFrame:frame];
-    v.text = @"BITMAP";
+    v.text = @"05:40:32";
     v.dotType = FBFontDotTypeSquare;
     v.numberOfBottomPaddingDot = 1;
     v.numberOfTopPaddingDot    = 1;
