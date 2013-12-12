@@ -12,7 +12,7 @@
 @property (nonatomic, assign) NSInteger numberOfTopPaddingDot;
 @property (nonatomic, assign) NSInteger numberOfBottomPaddingDot;
 @property (nonatomic, assign) NSInteger numberOfRightPaddingDot;
-@property (nonatomic, assign) NSInteger numberOfPaddingDotWithinDigits;
+@property (nonatomic, assign) NSInteger numberOfPaddingDotsBetweenDigits;
 @property (nonatomic, strong) UIColor *offColor;
 @property (nonatomic, strong) UIColor *onColor;
 @property (nonatomic, strong) UIColor *glowColor;
