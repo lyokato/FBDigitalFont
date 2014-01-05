@@ -46,6 +46,7 @@
 {
     _text = text;
     self.symbols = [FBFontSymbol symbolsForString:text];
+    [self setNeedsDisplay];
 }
 
 - (void)resetSize
