@@ -2,9 +2,18 @@
 
 @implementation FBFontSymbol
 
+static NSMutableArray *symbols;
+
 + (NSArray *)symbolsForString:(NSString *)str
 {
-    NSMutableArray *symbols = @[].mutableCopy;
+    //@[].mutableCopy is causing memory leaks because new arrays are getting created everytime it's refreshed.
+    //Only create symbols if it's nil, else remove all symbols and keep reusing the NSMutableArray.
+    if (symbols == nil) {
+        symbols = @[].mutableCopy;
+    } else {
+        [symbols removeAllObjects];
+    }
+    
     NSString *upper = [str uppercaseString];
     for (NSInteger i = 0; i < upper.length; i++) {
         NSString *c = [upper substringWithRange:NSMakeRange(i,1)];
