@@ -24,7 +24,7 @@
 @end
 
 @interface FBViewController ()
-
+@property(strong,nonatomic)FBBitmapFontView *bfv;
 @end
 
 @implementation FBViewController
@@ -37,25 +37,45 @@
     [self setupLCDFont];
     [self setupSquareFont];
     [self setupSquareFont2];
+    
+    [NSTimer scheduledTimerWithTimeInterval:1.0
+                                     target:self
+                                   selector:@selector(tick:)
+                                   userInfo:nil
+                                    repeats:YES];
+}
+
+-(void)tick:(NSTimer *)timer {
+    
+    self.bfv.text = [self time];
+}
+
+-(NSString*)time {
+    //do smth
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"hh:mm:ss"];
+    NSDate *date = [[NSDate alloc]init];
+    
+    return [dateFormatter stringFromDate:date];
 }
 
 
 - (void)setupBitmapFont
 {
     CGRect frame = CGRectMake(10, 60, 300, 50);
-    FBBitmapFontView *v = [[FBBitmapFontView alloc] initWithFrame:frame];
-    v.text = @"05:40:32";
-    v.dotType = FBFontDotTypeSquare;
-    v.numberOfBottomPaddingDot = 1;
-    v.numberOfTopPaddingDot    = 1;
-    v.numberOfLeftPaddingDot   = 2;
-    v.numberOfRightPaddingDot  = 2;
-    v.glowSize = 20.0;
-    v.innerGlowSize = 3.0;
-    v.edgeLength = 5.0;
-    [self.view addSubview:v];
-    [v resetSize];
-    [v centerizeInWidth:320];
+    self.bfv = [[FBBitmapFontView alloc] initWithFrame:frame];
+    self.bfv.text = [self time];
+    self.bfv.dotType = FBFontDotTypeSquare;
+    self.bfv.numberOfBottomPaddingDot = 1;
+    self.bfv.numberOfTopPaddingDot    = 1;
+    self.bfv.numberOfLeftPaddingDot   = 2;
+    self.bfv.numberOfRightPaddingDot  = 2;
+    self.bfv.glowSize = 20.0;
+    self.bfv.innerGlowSize = 3.0;
+    self.bfv.edgeLength = 5.0;
+    [self.view addSubview:self.bfv];
+    [self.bfv resetSize];
+    [self.bfv centerizeInWidth:320];
 }
 
 - (void)setupLCDFont
