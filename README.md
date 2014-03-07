@@ -55,10 +55,10 @@ For more detail, access to [Flashback Calendar](http://flashback-calendar.com/)
 
 ## SETTING UP
 
-If you use CocoaPods, add following line into your Podfile
+If you use CocoaPods, add the following line to your Podfile
 
 ```
-pod 'FBDigitalFont', :git => 'https://github.com/lyokato/FBDigitalFont.git'
+pod 'FBDigitalFont'
 ```
 
 or directly git clone or download from this page. 
@@ -216,5 +216,5 @@ See [FBGlowLabel](http://github.com/lyokato/fbglowlabel "FBGlowLabel")
 
 ## FOR MORE DETAIL
 
-This repository includes demo project, so you can dig into it for more detail. 
+This repository includes demo project, so you can dig into it for more details. 
 
