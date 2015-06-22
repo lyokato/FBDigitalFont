@@ -45,14 +45,6 @@ All you have to do is to set 4 properties.
 - glowSize
 - innerGlowSize
 
-## APPLICATION EXAMPLE
-
-In my app, "Flashback", Most of digital styled fonts are provided by this technique.
-
-![Flashback](http://static.squarespace.com/static/51c2c539e4b032aad7050f2e/t/5280c72be4b05ebb58c32579/1384171308891/Screens5.png?format=1500w "Flashback")
-
-For more detail, access to [Flashback Calendar](http://flashback-calendar.com/)
-
 ## SETTING UP
 
 If you use CocoaPods, add the following line to your Podfile
