@@ -6,9 +6,9 @@ static NSString *const kLCDSymbolPartPositionTop         = @"LCDTop";
 static NSString *const kLCDSymbolPartPositionCenter      = @"LCDCenter";
 static NSString *const kLCDSymbolPartPositionBottom      = @"LCDBottom";
 static NSString *const kLCDSymbolPartPositionLeftTop     = @"LCDLeftTop";
-static NSString *const kLCDSymbolPartPositionLeftButtom  = @"LCDLeftButtom";
+static NSString *const kLCDSymbolPartPositionLeftButton  = @"LCDLeftButton";
 static NSString *const kLCDSymbolPartPositionRightTop    = @"LCDRightTop";
-static NSString *const kLCDSymbolPartPositionRightBottom = @"LCDRightButtom";
+static NSString *const kLCDSymbolPartPositionRightBottom = @"LCDRightButton";
 
 + (void)drawSymbol:(FBFontSymbolType)symbol
         edgeLength:(CGFloat)edgeLength
@@ -69,7 +69,7 @@ static NSString *const kLCDSymbolPartPositionRightBottom = @"LCDRightButtom";
         CGContextFillPath(ctx);
         CGPathRelease(path);
     }
-    if ([[partsMap valueForKey:kLCDSymbolPartPositionLeftButtom] boolValue])
+    if ([[partsMap valueForKey:kLCDSymbolPartPositionLeftButton] boolValue])
     {
         CGMutablePathRef path = CGPathCreateMutable();
         CGPathMoveToPoint(path, NULL, startPoint.x, startPoint.y + edgeLength * 2 - spacer);
@@ -115,7 +115,7 @@ static NSString *const kLCDSymbolPartPositionRightBottom = @"LCDRightButtom";
                 [NSNumber numberWithBool:YES], kLCDSymbolPartPositionTop,
                 [NSNumber numberWithBool:YES], kLCDSymbolPartPositionBottom,
                 [NSNumber numberWithBool:YES], kLCDSymbolPartPositionLeftTop,
-                [NSNumber numberWithBool:YES], kLCDSymbolPartPositionLeftButtom,
+                [NSNumber numberWithBool:YES], kLCDSymbolPartPositionLeftButton,
                 [NSNumber numberWithBool:YES], kLCDSymbolPartPositionRightTop,
                 [NSNumber numberWithBool:YES], kLCDSymbolPartPositionRightBottom,
                 [NSNumber numberWithBool:NO], kLCDSymbolPartPositionCenter,
@@ -125,7 +125,7 @@ static NSString *const kLCDSymbolPartPositionRightBottom = @"LCDRightButtom";
                     [NSNumber numberWithBool:NO], kLCDSymbolPartPositionTop,
                     [NSNumber numberWithBool:NO], kLCDSymbolPartPositionBottom,
                     [NSNumber numberWithBool:NO], kLCDSymbolPartPositionLeftTop,
-                    [NSNumber numberWithBool:NO], kLCDSymbolPartPositionLeftButtom,
+                    [NSNumber numberWithBool:NO], kLCDSymbolPartPositionLeftButton,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionRightTop,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionRightBottom,
                     [NSNumber numberWithBool:NO], kLCDSymbolPartPositionCenter,
@@ -135,7 +135,7 @@ static NSString *const kLCDSymbolPartPositionRightBottom = @"LCDRightButtom";
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionTop,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionBottom,
                     [NSNumber numberWithBool:NO], kLCDSymbolPartPositionLeftTop,
-                    [NSNumber numberWithBool:YES], kLCDSymbolPartPositionLeftButtom,
+                    [NSNumber numberWithBool:YES], kLCDSymbolPartPositionLeftButton,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionRightTop,
                     [NSNumber numberWithBool:NO], kLCDSymbolPartPositionRightBottom,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionCenter,
@@ -145,7 +145,7 @@ static NSString *const kLCDSymbolPartPositionRightBottom = @"LCDRightButtom";
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionTop,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionBottom,
                     [NSNumber numberWithBool:NO], kLCDSymbolPartPositionLeftTop,
-                    [NSNumber numberWithBool:NO], kLCDSymbolPartPositionLeftButtom,
+                    [NSNumber numberWithBool:NO], kLCDSymbolPartPositionLeftButton,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionRightTop,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionRightBottom,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionCenter,
@@ -155,7 +155,7 @@ static NSString *const kLCDSymbolPartPositionRightBottom = @"LCDRightButtom";
                     [NSNumber numberWithBool:NO], kLCDSymbolPartPositionTop,
                     [NSNumber numberWithBool:NO], kLCDSymbolPartPositionBottom,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionLeftTop,
-                    [NSNumber numberWithBool:NO], kLCDSymbolPartPositionLeftButtom,
+                    [NSNumber numberWithBool:NO], kLCDSymbolPartPositionLeftButton,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionRightTop,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionRightBottom,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionCenter,
@@ -165,7 +165,7 @@ static NSString *const kLCDSymbolPartPositionRightBottom = @"LCDRightButtom";
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionTop,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionBottom,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionLeftTop,
-                    [NSNumber numberWithBool:NO], kLCDSymbolPartPositionLeftButtom,
+                    [NSNumber numberWithBool:NO], kLCDSymbolPartPositionLeftButton,
                     [NSNumber numberWithBool:NO], kLCDSymbolPartPositionRightTop,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionRightBottom,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionCenter,
@@ -175,7 +175,7 @@ static NSString *const kLCDSymbolPartPositionRightBottom = @"LCDRightButtom";
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionTop,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionBottom,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionLeftTop,
-                    [NSNumber numberWithBool:YES], kLCDSymbolPartPositionLeftButtom,
+                    [NSNumber numberWithBool:YES], kLCDSymbolPartPositionLeftButton,
                     [NSNumber numberWithBool:NO], kLCDSymbolPartPositionRightTop,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionRightBottom,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionCenter,
@@ -185,7 +185,7 @@ static NSString *const kLCDSymbolPartPositionRightBottom = @"LCDRightButtom";
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionTop,
                     [NSNumber numberWithBool:NO], kLCDSymbolPartPositionBottom,
                     [NSNumber numberWithBool:NO], kLCDSymbolPartPositionLeftTop,
-                    [NSNumber numberWithBool:NO], kLCDSymbolPartPositionLeftButtom,
+                    [NSNumber numberWithBool:NO], kLCDSymbolPartPositionLeftButton,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionRightTop,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionRightBottom,
                     [NSNumber numberWithBool:NO], kLCDSymbolPartPositionCenter,
@@ -195,7 +195,7 @@ static NSString *const kLCDSymbolPartPositionRightBottom = @"LCDRightButtom";
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionTop,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionBottom,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionLeftTop,
-                    [NSNumber numberWithBool:YES], kLCDSymbolPartPositionLeftButtom,
+                    [NSNumber numberWithBool:YES], kLCDSymbolPartPositionLeftButton,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionRightTop,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionRightBottom,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionCenter,
@@ -205,7 +205,7 @@ static NSString *const kLCDSymbolPartPositionRightBottom = @"LCDRightButtom";
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionTop,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionBottom,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionLeftTop,
-                    [NSNumber numberWithBool:NO], kLCDSymbolPartPositionLeftButtom,
+                    [NSNumber numberWithBool:NO], kLCDSymbolPartPositionLeftButton,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionRightTop,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionRightBottom,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionCenter,
@@ -215,7 +215,7 @@ static NSString *const kLCDSymbolPartPositionRightBottom = @"LCDRightButtom";
                     [NSNumber numberWithBool:NO], kLCDSymbolPartPositionTop,
                     [NSNumber numberWithBool:NO], kLCDSymbolPartPositionBottom,
                     [NSNumber numberWithBool:NO], kLCDSymbolPartPositionLeftTop,
-                    [NSNumber numberWithBool:NO], kLCDSymbolPartPositionLeftButtom,
+                    [NSNumber numberWithBool:NO], kLCDSymbolPartPositionLeftButton,
                     [NSNumber numberWithBool:NO], kLCDSymbolPartPositionRightTop,
                     [NSNumber numberWithBool:NO], kLCDSymbolPartPositionRightBottom,
                     [NSNumber numberWithBool:YES], kLCDSymbolPartPositionCenter,
@@ -225,7 +225,7 @@ static NSString *const kLCDSymbolPartPositionRightBottom = @"LCDRightButtom";
                     [NSNumber numberWithBool:NO], kLCDSymbolPartPositionTop,
                     [NSNumber numberWithBool:NO], kLCDSymbolPartPositionBottom,
                     [NSNumber numberWithBool:NO], kLCDSymbolPartPositionLeftTop,
-                    [NSNumber numberWithBool:NO], kLCDSymbolPartPositionLeftButtom,
+                    [NSNumber numberWithBool:NO], kLCDSymbolPartPositionLeftButton,
                     [NSNumber numberWithBool:NO], kLCDSymbolPartPositionRightTop,
                     [NSNumber numberWithBool:NO], kLCDSymbolPartPositionRightBottom,
                     [NSNumber numberWithBool:NO], kLCDSymbolPartPositionCenter,
